@@ -45,6 +45,7 @@ button{font:inherit;font-weight:800;color:#fff;border:0;cursor:pointer;text-shad
 <body>
 <div id="app">
   <div id="vig"></div>
+  <div style="position:absolute;left:6px;bottom:2px;font-size:10px;opacity:.5;pointer-events:none;z-index:5">v6</div>
   <div id="hud" class="ov" hidden>
     <div class="top"><span class="chip" id="sc">0 m</span><span style="flex:1"></span><span class="chip" id="sp">0 km/h</span></div>
     <button class="bl" id="exit">&lsaquo; GARAGE</button>
@@ -268,6 +269,4 @@ for (let i = 0; i < 40; i++) { const t = mkTree(); placeTree(t, 20 - i * 6); H.a
 const M = new THREE.Group(), MT = new THREE.Group(); scene.add(M); M.add(MT);
 const blocks = [], gems = [];
 // ---- city: ground tile (roads + lots), window texture, building blocks ----
-const cityT = canvasTex(256, 256, x => {
-  x.fillStyle = '#3a3f48'; x.fillRect(0, 0, 256, 256);
-  x.fillStyle = '#9a9ca1'; x.fillRect(38, 38, 180
+const cityT = canvasTex(256
